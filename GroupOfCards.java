@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class GroupOfCards {
-	private ArrayList<Cards> cartas = new ArrayList<Cards>();
-	private int tamañoActual = 0;
+	protected ArrayList<Cards> cartas = new ArrayList<Cards>();
+	protected int tamañoActual = 0;
 
 	public void addCards() {
 		cartas.add(new Cards());
@@ -11,6 +11,10 @@ public class GroupOfCards {
 
 	public GroupOfCards() {
 
+	}
+
+	public void mostrarCartaIndice(int indice) {
+		System.out.println(cartas.get(indice));
 	}
 
 	public GroupOfCards(ArrayList<Cards> cartas, int tamañoActual) {
@@ -33,7 +37,11 @@ public class GroupOfCards {
 	public void setTamañoActual(int tamañoActual) {
 		this.tamañoActual = tamañoActual;
 	}
-	
-	
+	public void mostrarCartas() {
+		for (Cards cards : cartas) {
+			System.out.println(cards);
+		}
+	}
+
 
 }

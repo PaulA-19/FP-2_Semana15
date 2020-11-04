@@ -14,6 +14,7 @@ public class Cards {
 		aumentarValor();
 
 	}
+
 	public Cards(int numero, String palo) {
 		this.numero = valor;
 		this.palo = palo;
@@ -33,6 +34,5 @@ public class Cards {
 	public String toString() {
 		return "Cards [numero=" + numero + ", palo=" + palo + "]";
 	}
-	
 
 }
