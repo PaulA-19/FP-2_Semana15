@@ -4,7 +4,7 @@ public class GroupOfCards {
 	protected ArrayList<Cards> cartas = new ArrayList<Cards>();
 	protected int tamañoActual = 0;
 
-	public void addCards() {
+	public void addNewCard() {
 		cartas.add(new Cards());
 		tamañoActual++;
 	}
