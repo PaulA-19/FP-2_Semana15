@@ -30,9 +30,12 @@ public class Cards {
 		}
 	}
 
-	@Override
 	public String toString() {
 		return "Cards [numero=" + numero + ", palo=" + palo + "]";
+	}
+
+	public int getNumero() {
+		return numero;
 	}
 
 }

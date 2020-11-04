@@ -8,13 +8,17 @@ public class GroupOfCards {
 		cartas.add(new Cards());
 		tamañoActual++;
 	}
+	public void addCards(Cards carta) {
+		cartas.add(carta);
+	}
 
 	public GroupOfCards() {
 
 	}
 
-	public void mostrarCartaIndice(int indice) {
-		System.out.println(cartas.get(indice));
+
+	public int mostrarNumCartaIndice(int indice) {
+		return cartas.get(indice).getNumero();
 	}
 
 	public GroupOfCards(ArrayList<Cards> cartas, int tamañoActual) {
