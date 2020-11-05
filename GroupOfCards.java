@@ -6,11 +6,14 @@ public class GroupOfCards {
 
 	public void addNewCard() {
 		cartas.add(new Cards());
-		tamañoActual++;
+		aumentarTamaño();
 	}
 	public void addCards(Cards carta) {
 		cartas.add(carta);
+		aumentarTamaño();
+
 	}
+
 
 	public GroupOfCards() {
 
@@ -37,10 +40,17 @@ public class GroupOfCards {
 	public int getTamañoActual() {
 		return tamañoActual;
 	}
-
-	public void setTamañoActual(int tamañoActual) {
-		this.tamañoActual = tamañoActual;
+	public void setTamañoActual(int tammañoActual) {
+		this.tamañoActual = tammañoActual;
 	}
+
+	public void aumentarTamaño() {
+		tamañoActual++;
+	}
+	public void DisminuirTamaño() {
+		tamañoActual--;
+	}
+	
 	public void mostrarCartas() {
 		for (Cards cards : cartas) {
 			System.out.println(cards);
